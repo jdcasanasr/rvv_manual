@@ -1,0 +1,38 @@
+\documentclass[letterpaper, 10pt, oneside]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[acronym]{glossaries}
+\usepackage{lipsum}
+
+\title{The RISC-V Vector Manual \\ \large{A Tutorial Introduction to Vector Architectures Using the RISC-V Vector ISA}}
+\author{Juan-Daniel Casañas-Roque \\ \large{Lagarto Project}}
+\date{\today}
+
+% Acronym declaration goes here!
+\input{acronyms}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\printglossary[type=\acronymtype]
+\clearpage
+
+%Temporary solution to make the acronym list work
+\input{acronym_list_temp}
+
+% The following chapter order is not final!
+% Introduction
+\input{introduction.tex}
+
+\input{instruction_set_architecture_description}
+\input{instruction_types}
+\input{static_dynamic_variables}
+\input{vector_elements_organization}
+\input{vector_extension_states}
+\input{vector_instruction_format_listing}
+\input{vector_register_file_organization}
+
+% References
+\input{references}
+
+\end{document}

@@ -1,0 +1,21 @@
+\makeglossaries
+
+\newacronym{elen}{ELEN}{Maximum Element Length. Must be a power of 2 and at least equal to 8 bits}
+
+\newacronym{vlen}{VLEN}{Vector Register Length. Must be greater than or equal to \acrshort{elen} and less than or equal to 65536 ($2^{16}$) bits}
+
+\newacronym{sew}{SEW}{Selected Element Length. Represents the size (in bits) of the elements within a vector register}
+
+\newacronym{lmul}{LMUL}{Vector Length Multiplier. Indicates how many vector registers are currently grouped}
+
+\newacronym{eew}{EEW}{Effective Element Length. Length of any element within a vector register when dealing with mixed-width or widening-narrowing operations}
+
+\newacronym{emul}{EMUL}{Effective Vector Length Multiplier. Indicates how many vector registers are grouped for a given vector operand when dealing with mixed-width or widening-narrowing operations}
+
+\newacronym{avl}{AVL}{Application Vector Length. Indicates how many elements in total are to be processed for a given application}
+
+\newacronym{vlmax}{VLMAX}{Maximum Vector Length. Indicates how many elements can be processed at max with the current \acrshort{vlen}, \acrshort{sew} and \acrshort{lmul} settings}
+
+\newacronym{isa}{ISA}{Instruction Set Architecture. Defines the minimum hardware (and software) requirements a given implementation needs to cover in order to execute a set of instructions}
+
+\newacronym{csr}{CSR}{Control and Status Register. A special register within a given memory-space that holds important information regarding the architecture's characteristics and its state.}
