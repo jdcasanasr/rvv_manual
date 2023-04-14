@@ -1,21 +1,23 @@
-\makeglossaries
+\makenoidxglossaries
 
-\newacronym{elen}{ELEN}{Maximum Element Length. Must be a power of 2 and at least equal to 8 bits}
+\newacronym{elen}{ELEN}{Maximum Element Length. Defines the biggest size (in bits) any vector element can have.}
 
-\newacronym{vlen}{VLEN}{Vector Register Length. Must be greater than or equal to \acrshort{elen} and less than or equal to 65536 ($2^{16}$) bits}
+\newacronym{vlen}{VLEN}{Vector Register Length. Defines the biggest size (in bits) of any vector register.}
 
-\newacronym{sew}{SEW}{Selected Element Length. Represents the size (in bits) of the elements within a vector register}
+\newacronym{vrg}{VRG}{Vector Register Group. Any set of vector registers taken as a unity, even if such a set only contains one register.}
 
-\newacronym{lmul}{LMUL}{Vector Length Multiplier. Indicates how many vector registers are currently grouped}
+\newacronym{sew}{SEW}{Selected Element Length. Represents the global size (in bits) of the elements within any \acrshort{vrg}.}
 
-\newacronym{eew}{EEW}{Effective Element Length. Length of any element within a vector register when dealing with mixed-width or widening-narrowing operations}
+\newacronym{lmul}{LMUL}{Vector Length Multiplier. Global indicator of how many vector registers are grouped together for any \acrshort{vrg}.}
 
-\newacronym{emul}{EMUL}{Effective Vector Length Multiplier. Indicates how many vector registers are grouped for a given vector operand when dealing with mixed-width or widening-narrowing operations}
+\newacronym{eew}{EEW}{Effective Element Length. Size (in bits) of the elements within a particular \acrshort{vrg} operand when dealing with mixed-width or widening-narrowing operations.}
 
-\newacronym{avl}{AVL}{Application Vector Length. Indicates how many elements in total are to be processed for a given application}
+\newacronym{emul}{EMUL}{Effective Vector Length Multiplier. Indicates how many vector registers are grouped together for a particular \acrshort{vrg} operand when dealing with mixed-width or widening-narrowing operations}
 
-\newacronym{vlmax}{VLMAX}{Maximum Vector Length. Indicates how many elements can be processed at max with the current \acrshort{vlen}, \acrshort{sew} and \acrshort{lmul} settings}
+\newacronym{avl}{AVL}{Application Vector Length. Indicates how many vector elements are to be processed in total for a given application.}
 
-\newacronym{isa}{ISA}{Instruction Set Architecture. Defines the minimum hardware (and software) requirements a given implementation needs to cover in order to execute a set of instructions}
+\newacronym{vlmax}{VLMAX}{Maximum Vector Length. Indicates the maximum number of elements that can be processed with our implementation's \acrshort{vlen} and the current \acrshort{sew} and \acrshort{lmul} settings.}
 
-\newacronym{csr}{CSR}{Control and Status Register. A special register within a given memory-space that holds important information regarding the architecture's characteristics and its state.}
+\newacronym{isa}{ISA}{Instruction Set Architecture. Defines the minimum hardware and software requirements a given implementation needs to cover in order to execute a set of instructions (?).}
+
+\newacronym{csr}{CSR}{Control and Status Register. A special kind of register within a given memory-space that holds important information regarding the architecture's characteristics and its state (?).}

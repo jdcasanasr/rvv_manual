@@ -1,0 +1,8 @@
+\contentsline {chapter}{\numberline {1}Introduction}{4}{}%
+\contentsline {chapter}{\numberline {2}Instruction Set Architecture Description}{5}{}%
+\contentsline {chapter}{\numberline {3}Instruction Types}{7}{}%
+\contentsline {chapter}{\numberline {4}Static \& Dynamic Variables}{8}{}%
+\contentsline {chapter}{\numberline {5}Vector Elements' Organization}{9}{}%
+\contentsline {chapter}{\numberline {6}Vector Extension States}{11}{}%
+\contentsline {chapter}{\numberline {7}Vector Instruction Format Listing}{12}{}%
+\contentsline {chapter}{\numberline {8}Vector Register File Organization}{14}{}%

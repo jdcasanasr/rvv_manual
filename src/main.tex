@@ -3,26 +3,26 @@
 \usepackage[acronym]{glossaries}
 \usepackage{lipsum}
 
+\renewcommand\bibname{References}
+
 \title{The RISC-V Vector Manual \\ \large{A Tutorial Introduction to Vector Architectures Using the RISC-V Vector ISA}}
 \author{Juan-Daniel Casañas-Roque \\ \large{Lagarto Project}}
 \date{\today}
 
-% Acronym declaration goes here!
+ %Acronym declaration goes here!
 \input{acronyms}
 
 \begin{document}
 
 \maketitle
 \tableofcontents
-\printglossary[type=\acronymtype]
-\clearpage
-
-%Temporary solution to make the acronym list work
-\input{acronym_list_temp}
+\printnoidxglossary[type=\acronymtype]
+\printacronyms
 
 % The following chapter order is not final!
 % Introduction
 \input{introduction.tex}
+\input{acronym_list_temp}
 
 \input{instruction_set_architecture_description}
 \input{instruction_types}
@@ -33,6 +33,7 @@
 \input{vector_register_file_organization}
 
 % References
-\input{references}
+\bibliographystyle{IEEEtran}
+\bibliography{../ref/references}
 
 \end{document}
