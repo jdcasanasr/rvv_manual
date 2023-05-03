@@ -1,0 +1,26 @@
+\documentclass{standalone}
+
+\usepackage{tikz}
+\usetikzlibrary{decorations.pathreplacing,calligraphy}
+
+\begin{document}
+	\begin{tikzpicture}
+		\draw[fill=gray!32, rounded corners] (0, 0) rectangle (16, 1);
+		\draw (4, 0) -- (4, 1);
+		\draw (8, 0) -- (8, 1);
+		\draw (12, 0) -- (12, 1);
+		
+		\node at (2, 0.5) {$e_{3}$};
+		\node at (6, 0.5) {$e_{2}$};
+		\node at (10, 0.5) {$e_{1}$};
+		\node at (14, 0.5) {$e_{0}$};
+		
+		\draw [decorate, decoration = {calligraphic brace}] (0, 1.25) --  (4, 1.25);
+		\draw [decorate, decoration = {calligraphic brace, mirror}] (0, -0.25) --  (16, -0.25); 
+		
+		\node at (2, 1.5) {32 bits};
+		\node at (8, -0.5) {128 bits};
+		
+		\node at (16.5, 0.5) {$v_{n}$};
+	\end{tikzpicture}
+\end{document}t

@@ -1,0 +1,45 @@
+\documentclass{standalone}
+
+\usepackage{tikz}
+\usetikzlibrary{decorations.pathreplacing,calligraphy}
+
+\begin{document}
+	\begin{tikzpicture}
+		\draw[fill=gray!32, rounded corners] (0, 0) rectangle (16, 2);
+		\draw (0, 1) -- (16, 1);
+		\draw (2, 0) -- (2, 2);
+		\draw (4, 0) -- (4, 2);
+		\draw (6, 0) -- (6, 2);
+		\draw (8, 0) -- (8, 2);
+		\draw (10, 0) -- (10, 2);
+		\draw (12, 0) -- (12, 2);
+		\draw (14, 0) -- (14, 2);
+		
+		\node at (1, 1.5) {$e_{7}$};
+		\node at (3, 1.5) {$e_{6}$};
+		\node at (5, 1.5) {$e_{5}$};
+		\node at (7, 1.5) {$e_{4}$};
+		\node at (9, 1.5) {$e_{3}$};
+		\node at (11, 1.5) {$e_{2}$};
+		\node at (13, 1.5) {$e_{1}$};
+		\node at (15, 1.5) {$e_{0}$};
+		
+		\node at (1, 0.5) {$e_{15}$};
+		\node at (3, 0.5) {$e_{14}$};
+		\node at (5, 0.5) {$e_{13}$};
+		\node at (7, 0.5) {$e_{12}$};
+		\node at (9, 0.5) {$e_{11}$};
+		\node at (11, 0.5) {$e_{10}$};
+		\node at (13, 0.5) {$e_{9}$};
+		\node at (15, 0.5) {$e_{8}$};
+		
+		\draw [decorate, decoration = {calligraphic brace}] (0, 2.25) --  (2, 2.25);
+		\draw [decorate, decoration = {calligraphic brace, mirror}] (0, -0.25) --  (16, -0.25); 
+		
+		\node at (1, 2.5) {16 bits};
+		\node at (8, -0.5) {128 bits};
+		
+		\node at (16.5, 1.5) {$v_{n}$};
+		\node at (16.5, 0.5) {$v_{n+1}$};
+	\end{tikzpicture}
+\end{document}
